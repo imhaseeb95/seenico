@@ -1,893 +1,790 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Seenico</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,500;0,600;0,700;1,400&family=Noto+Sans:wght@300;400;500;600&family=Poppins:wght@500;600;700;800&family=Work+Sans:wght@400;500&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"
-      integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Etincelle</title>
+		<link rel="stylesheet" href="css/style.css" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+			rel="stylesheet"
+			integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+		/>
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+		/>
 
-    <!-- AOS -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+		<script
+			src="https://code.jquery.com/jquery-3.7.1.min.js"
+			integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://kit.fontawesome.com/e088578515.js"
+			crossorigin="anonymous"
+		></script>
+		<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+		<script
+			type="text/javascript"
+			src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+		></script>
+	</head>
+	<body>
+		<header>
+			<div class="container">
+				<div class="header-main-container">
+					<div class="logo-container">
+						<a href="#" class="logo"><img src="./img/logo.jpg" alt="" /></a>
+					</div>
+					<div class="header-links-conatiner">
+						<nav>
+							<ul>
+								<li><a href="index.html">Home</a></li>
+								<li><a href="about.html">About</a></li>
+								<li><a href="#">Choclates</a></li>
+								<li><a href="#">Stores</a></li>
+								<li><a href="#">Become Partner</a></li>
+								<li><a href="contact.html">Contact</a></li>
+							</ul>
+						</nav>
+						<a href="tel:+91 8130505609" class="get-in-touch"
+							><i class="fa-solid fa-phone-volume"></i
+						></a>
+					</div>
+				</div>
+			</div>
+		</header>
 
-    <script
-      src="https://kit.fontawesome.com/e088578515.js"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://code.jquery.com/jquery-3.6.1.min.js"
-      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
-      integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-  </head>
-  <body>
-    <!-- ==========================
-		Header Section
-	========================== -->
-    <header id="header-sec" class="sec-header">
-      <nav>
-        <div class="nav-bar">
-          <div class="nav-links-left">
-            <a href="/" class="sinco">Seenico.</a>
-            <div class="header-links">
-              <ul>
-                <li class="main-link">
-                  <a href="#" class="active">Home</a>
-                  <div class="sub-links">
-                    <ul class="choose-options" id="options">
-                      <li><a href="#">User Analysis</a></li>
-                      <li><a href="#">Artificial Intelligence</a></li>
-                      <li><a href="#">Data Scientist</a></li>
-                      <li><a href="#">Chatboot</a></li>
-                      <li><a href="#">Machine Learning</a></li>
-                    </ul>
-                  </div>
-                </li>
-                <li class="main-link">
-                  <a href="#">Pages</a>
-                  <div class="sub-links">
-                    <ul class="choose-options" id="options">
-                      <li class="icon-agles">
-                        <a href="#">About Us</a>
-                        <span class="agle-right"
-                          ><i class="fa fa-angle-right" aria-hidden="true"></i
-                        ></span>
-                        <div class="comp-about-link">
-                          <ul>
-                            <li>
-                              <a
-                                href="about-us-one.html"
-                                >About Us One</a
-                              >
-                            </li>
-                            <li>
-                              <a
-                                href="about-us-two.html"
-                                >About Us Two</a
-                              >
-                            </li>
-                          </ul>
-                        </div>
-                      </li>
-                      <li class="icon-agles">
-                        <a href="#">Services</a>
-                        <span class="agle-right"
-                          ><i class="fa fa-angle-right" aria-hidden="true"></i
-                        ></span>
-                        <div class="comp-service-link">
-                          <ul>
-                            <li>
-                              <a
-                                href="services-one.html"
-                                >Service One</a
-                              >
-                            </li>
-                            <li><a href="#">Service Two</a></li>
-                            <li><a href="#">Service Details</a></li>
-                          </ul>
-                        </div>
-                      </li>
-                      <li class="icon-agles">
-                        <a href="#">Our Team</a>
-                        <span class="agle-right"
-                          ><i class="fa fa-angle-right" aria-hidden="true"></i
-                        ></span>
-                        <div class="comp-our-team-link">
-                          <ul>
-                            <li><a href="#">Team Member</a></li>
-                            <li><a href="#">Team Details</a></li>
-                          </ul>
-                        </div>
-                      </li>
-                      <li class="icon-agles">
-                        <a href="#">Our Pages</a>
-                        <span class="agle-right"
-                          ><i class="fa fa-angle-right" aria-hidden="true"></i
-                        ></span>
-                        <div class="comp-our-pages-link">
-                          <ul>
-                            <li><a href="#">Faq</a></li>
-                            <li><a href="#">Signin</a></li>
-                            <li><a href="#">Signup</a></li>
-                            <li><a href="#">404 Error</a></li>
-                          </ul>
-                        </div>
-                      </li>
-                      <li><a href="#">Testimonials</a></li>
-                      <li><a href="#">Our pricing</a></li>
-                    </ul>
-                  </div>
-                </li>
-                <li class="main-link">
-                  <a href="#">Portfolio</a>
-                  <div class="sub-links">
-                    <ul class="choose-options" id="options">
-                      <li><a href="#">Portfolio 3 Columns</a></li>
-                      <li><a href="#">Portfolio 2 Columns</a></li>
-                      <li><a href="#">Portfolio Masonry</a></li>
-                      <li><a href="#">Single Portfolio</a></li>
-                    </ul>
-                  </div>
-                </li>
-                <li class="main-link">
-                  <a href="#">Blog</a>
-                  <div class="sub-links">
-                    <ul class="choose-options" id="options">
-                      <li><a href="#">Grid Layout</a></li>
-                      <li><a href="#">Grid with Sidebar</a></li>
-                      <li><a href="#">Blog Masonry</a></li>
-                      <li><a href="#">Blog Standard</a></li>
-                      <li><a href="#">Blog Details</a></li>
-                    </ul>
-                  </div>
-                </li>
-                <li class="main-link">
-                  <a href="contact.html"
-                    >Contact</a>
-                </li>
-              </ul>
-            </div>
-          </div>
+		<!-- Hero Section -->
 
-          <div class="nav-links-right">
-            <div class="contact-us">
-              <span class="call-us">Call us</span>
-              <a href="tel:8130505609" class="contact-number"
-                >(91+)8130505609</a
-              >
-            </div>
-            <div class="search-bar">
-              <input type="text" class="search-input" />
-              <span class="search-icon"
-                ><i class="fa-solid fa-magnifying-glass"></i
-              ></span>
-            </div>
-            <div class="message-box">
-              <a href="mailto:ansari.hasib99@gmail" class="btn-send">Send Message</a>
-            </div>
-          </div>
-        </div>
-      </nav>
-    </header>
-    <!-- ==========================
-		Hero Section
-	========================== -->
-    <section id="sec-hero" class="section-hero">
-      <div class="wrapper">
-        <div class="hero-flex-box">
-          <div class="ai-container">
-            <div class="ai-box">
-              <h1>
-                Customer Ai <br />
-                Solution for user
-                <span class="analystics-text">Analytics.</span>
-              </h1>
-              <p>
-                Sinco delivered blazing fast, striking ai solution lorem quis
-                data user learning analysis.
-              </p>
-              <ul>
-                <li><a href="mailto:ansari.hasib99@gmail.com" class="demo-link">Request a Demo</a></li>
-                <li>
-                  <a href="#" class="icon-play"
-                    ><i class="fa-solid fa-play"></i
-                  ></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="ai-image">
-            <img src="img/ils_13.svg" alt="hero-sec-image" />
-            <div class="ai-second-img">
-              <img src="img/ils_13_1.svg" alt="" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+		<section class="hero-sec bg-image">
+			<div class="container">
+				<div class="hero-content-box">
+					<h1>We Provide Quality Choclates</h1>
+					<p>
+						There are many variations of passages orem psum available but the
+						majority have suffered alteration in some form by injected humour or
+						randomised words which don't look even making it look like readable
+						slightly believable.
+					</p>
 
-    <!-- ==========================
-		Service Section
-	========================== -->
-    <section id="sec-service" class="sections-padd animatiom-juggle hidden-sec">
-      <div class="wrapper">
-        <div class="service-flex-box">
-          <div class="service-heading" data-aos="fade-right">
-            <h2 class="heading">
-              <span class="analystics-text">Services</span> We Provide <br />
-              with Quality.
-            </h2>
-          </div>
-          <div class="service-text" data-aos="fade-left">
-            <div class="text">
-              NLP entails applying algorithms to identify and extract rules such
-              that the unstructured language data is converted.
-            </div>
-          </div>
-        </div>
+					<div class="hero-links-container">
+						<a href="#" class="btn btn-one"
+							>Learn more <i class="fa-solid fa-arrow-right"></i
+						></a>
+						<a href="#" class="btn btn-two"
+							>Learn more <i class="fa-solid fa-arrow-right"></i
+						></a>
+					</div>
+				</div>
+			</div>
+		</section>
 
-        <div class="provide-services">
-          <div class="service-provide-box">
-            <div class="services-box padd-data-science" data-aos="fade-right">
-              <div class="service-imgs">
-                <img src="img/icon_31.svg" alt="srevice-image" />
-              </div>
-              <h3><a href="#">Data Science</a></h3>
-              <p>
-                Convert data noise to intelligent insights for competitive
-                differentiation qulaity check.
-              </p>
-              <span class="agel-right">
-                <a href="#"
-                  ><img
-                    src="img/icon_frw_arrow.svg"
-                    alt="srevice-image-forward"
-                /></a>
-              </span>
-            </div>
+		<!-- Usp Section -->
 
-            <div class="services-box box-shadow" data-aos="fade-up">
-              <div class="service-imgs">
-                <img src="img/icon_32.svg" alt="srevice-image" />
-              </div>
-              <h3><a href="#">Customer Support</a></h3>
-              <p>
-                Convert data noise intelligent insights for competitive
-                differentiation qulaity check equlity.
-              </p>
-              <span class="agel-right">
-                <a href="#"
-                  ><img
-                    src="img/icon_frw_arrow.svg"
-                    alt="srevice-image-forward"
-                /></a>
-              </span>
-            </div>
+		<section class="section usp-sec">
+			<div class="container">
+				<div class="grid-column-three">
+					<div class="card ourusp-main-container">
+						<div class="our-usp-image">
+							<img src="./img/free-shiping.jpg" alt="Ourusp" />
+						</div>
+						<h3>Free Shipping</h3>
+						<p>
+							There are many variations of passages available but the majority
+							have suffered alteration in some form.
+						</p>
+					</div>
 
-            <div class="services-box" data-aos="fade-left" data-aos-delay="100">
-              <div class="service-imgs">
-                <img src="img/icon_33.svg" alt="srevice-image" />
-              </div>
-              <h3><a href="#">Machine Learning</a></h3>
-              <p>
-                Convert data noise intelligent insights for competitive
-                differentiation qulaity check equlity.
-              </p>
-              <span class="agel-right">
-                <a href="#"
-                  ><img
-                    src="img/icon_frw_arrow.svg"
-                    alt="srevice-image-forward"
-                /></a>
-              </span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+					<div class="card ourusp-main-container">
+						<div class="our-usp-image">
+							<img src="./img/free-delivery.jpg" alt="Ourusp" />
+						</div>
+						<h3>Delivery On Time</h3>
+						<p>
+							There are many variations of passages available but the majority
+							have suffered alteration in some form.
+						</p>
+					</div>
 
-    <!-- ==========================
-		Target Section
-	========================== -->
-    <section id="target-sec" class="sections-padd bg-color animatiom-zoom hidden-sec">
-      <div class="wrapper">
-        <div class="target-flex-box">
-          <div class="image-target-box" data-aos="fade-right">
-            <div class="target-img">
-              <img src="img/ils_14.svg" alt="" />
-              <div class="square"><img src="img/ils_14_4.svg" alt="" /></div>
-              <div class="square sur-1">
-                <img src="img/ils_14_5.svg" alt="" />
-              </div>
-              <div class="square sur-2">
-                <img src="img/ils_14_6.svg" alt="" />
-              </div>
-              <div class="bar">
-                <img src="img/ils_14_1.svg" alt="" data-aos="fade-down" />
-              </div>
-              <div class="bar bar-1">
-                <img
-                  src="img/ils_14_2.svg"
-                  alt=""
-                  data-aos="fade-down"
-                  data-aos-delay="100"
-                />
-              </div>
-              <div class="bar bar-2">
-                <img
-                  src="img/ils_14_3.svg"
-                  alt=""
-                  data-aos="fade-down"
-                  data-aos-delay="200"
-                />
-              </div>
-            </div>
-          </div>
-          <div class="target-text" data-aos="fade-left">
-            <div class="clients">
-              <div class="clients-title">OVER 150K+ CLIENT</div>
-              <div class="target-heading">
-                <h2>
-                  Target <span class="audience-text">Audience</span> <br />
-                  for your business.
-                </h2>
-              </div>
-              <p>
-                AI technology is perfect for best business <br />
-                solutions & we offer help to achieve your goals.
-              </p>
-              <ul>
-                <li>
-                  <span><i class="fa-solid fa-check"></i></span>&nbsp; Various
-                  analysis options.
-                </li>
-                <li>
-                  <span><i class="fa-solid fa-check"></i></span>&nbsp; Page Load
-                  (time, size, number of requests).
-                </li>
-                <li>
-                  <span><i class="fa-solid fa-check"></i></span>&nbsp; Advance
-                  Data analysis operation.
-                </li>
-              </ul>
-              <a href="mailto:ansari.hasib99@gmail.com" class="demo-link btn-two">More about us</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+					<div class="card ourusp-main-container">
+						<div class="our-usp-image">
+							<img src="./img/services.jpg" alt="Ourusp" />
+						</div>
+						<h3>Quality Service</h3>
+						<p>
+							There are many variations of passages available but the majority
+							have suffered alteration in some form.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
 
-    <!-- ==========================
-		Work Precess Section
-	========================== -->
-    <section id="work-sec" class="universal-paad bg-img animatiom-work hidden-sec">
-      <div class="work-shape-image">
-        <img src="img/shape_work.svg" alt="" />
-      </div>
-      <div class="wrapper">
-        <div class="work-flex-box">
-          <div class="work-process-box" data-aos="fade-right">
-            <div class="clients-title work-process">WORK PROCESS</div>
-            <h3>
-              How sinco <span class="process-text">process</span> & works.
-            </h3>
-            <ul>
-              <li>
-                <div
-                  class="work-sub-felx-box"
-                  data-aos="fade-up"
-                  data-aos-delay="200"
-                >
-                  <div class="work-left-box">
-                    <div class="num">1</div>
-                  </div>
-                  <div class="work-right-box">
-                    <div class="process-content">
-                      <h6>Frame the Problem</h6>
-                      <p>
-                        Learn content by interacting with an expert lesson or
-                        watching a video.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </li>
+		<!-- Sweet Section -->
 
-              <li>
-                <div
-                  class="work-sub-felx-box"
-                  data-aos="fade-up"
-                  data-aos-delay="200"
-                >
-                  <div class="work-left-box">
-                    <div class="num">2</div>
-                  </div>
-                  <div class="work-right-box">
-                    <div class="process-content">
-                      <h6>Collect the Data</h6>
-                      <p>
-                        Practice what you learned on realistic SAT test
-                        questions.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </li>
+		<section class="section-pad sweets-sec">
+			<div class="container">
+				<div class="site-heading">
+					<h2>Discover <span class="color-brown">Sweet Delicious</span></h2>
+				</div>
+				<!-- <h2 class="sub-heading">
+					Discover <span class="color-brown">Sweet Delicious</span>
+				</h2> -->
+				<div class="sweets-slider">
+					<div class="item">
+						<div class="card ourusp-main-container">
+							<div class="sweets-image">
+								<img src="./img/Product1.png" alt="Ourusp" />
+							</div>
+							<h3>Milk Chocolate</h3>
+							<p>
+								There are many variations of passages available but the majority
+								have suffered alteration in some form.
+							</p>
+							<a href="#" class="btn read-btn"
+								>Read more <i class="fa-solid fa-arrow-right"></i
+							></a>
+						</div>
+					</div>
+					<div class="item">
+						<div class="card ourusp-main-container">
+							<div class="sweets-image">
+								<img src="./img/Product2.png" alt="Ourusp" />
+							</div>
+							<h3>Truffle With Vanilla</h3>
+							<p>
+								There are many variations of passages available but the majority
+								have suffered alteration in some form.
+							</p>
+							<a href="#" class="btn read-btn"
+								>Read more <i class="fa-solid fa-arrow-right"></i
+							></a>
+						</div>
+					</div>
+					<div class="item">
+						<div class="card ourusp-main-container">
+							<div class="sweets-image">
+								<img src="./img/Product3.png" alt="Ourusp" />
+							</div>
+							<h3>Almond Dark Chocolate</h3>
+							<p>
+								There are many variations of passages available but the majority
+								have suffered alteration in some form.
+							</p>
+							<a href="#" class="btn read-btn"
+								>Read more <i class="fa-solid fa-arrow-right"></i
+							></a>
+						</div>
+					</div>
+					<div class="item">
+						<div class="card ourusp-main-container">
+							<div class="sweets-image">
+								<img src="./img/Product2.png" alt="Ourusp" />
+							</div>
+							<h3>Truffle With Vanilla</h3>
+							<p>
+								There are many variations of passages available but the majority
+								have suffered alteration in some form.
+							</p>
+							<a href="#" class="btn read-btn"
+								>Read more <i class="fa-solid fa-arrow-right"></i
+							></a>
+						</div>
+					</div>
+					<div class="item">
+						<div class="card ourusp-main-container">
+							<div class="sweets-image">
+								<img src="./img/Product3.png" alt="Ourusp" />
+							</div>
+							<h3>Almond Dark Chocolate</h3>
+							<p>
+								There are many variations of passages available but the majority
+								have suffered alteration in some form.
+							</p>
+							<a href="#" class="btn read-btn"
+								>Read more <i class="fa-solid fa-arrow-right"></i
+							></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
-              <li>
-                <div
-                  class="work-sub-felx-box"
-                  data-aos="fade-up"
-                  data-aos-delay="600"
-                >
-                  <div class="work-left-box">
-                    <div class="num">3</div>
-                  </div>
-                  <div class="work-right-box">
-                    <div class="process-content">
-                      <h6>Process the Data</h6>
-                      <p>
-                        Have to be repudiated annoyances accepted the wise lorem
-                        ispum sample text.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </li>
-            </ul>
-          </div>
+		<!-- About Section -->
 
-          <div class="work-img-box" data-aos="fade-left">
-            <div class="work-image">
-              <img src="img/ils_15.svg" alt="" />
-              <div class="pages animation-juggle2">
-                <img src="img/ils_15_1.svg" alt="" />
-              </div>
-              <div class="pages page-1 animation-juggle3">
-                <img src="img/ils_15_2.svg" alt="" />
-              </div>
-              <div class="pages page-2 animation-juggle2">
-                <img src="img/ils_15_3.svg" alt="" />
-              </div>
-              <div class="pages page-3 animation-juggle3">
-                <img src="img/ils_15_4.svg" alt="" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+		<section class="section-pad about-sec">
+			<div class="about-bg-image">
+				<div class="container">
+					<div class="about-content">
+						<div class="site-heading">
+							<span class="site-title-tagline">ABOUT US</span>
+							<h2>We Provide Quality Chocolates</h2>
+						</div>
+						<p>
+							There are many variations of passages of Lorem Ipsum available,
+							but the majority have suffered alteration in some form, by
+							injected humour, or randomised words which don't look even
+							slightly believable.
+						</p>
+						<ul>
+							<li>At vero eos et accusamus et iusto odio</li>
+							<li>Established fact that a reader will be distracted</li>
+							<li>Sed ut perspiciatis unde omnis iste natus sit</li>
+						</ul>
+						<div>
+							<a href="#" class="btn about-btn"
+								>Discover more <i class="fa-solid fa-arrow-right"></i
+							></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="counter-sec" class="products">
+				<div class="container">
+					<div class="products-category-container">
+						<ul>
+							<li>
+								<div class="product-category-box">
+									<h4 class="count" data-target="230">0</h4>
+									<p>Pastry Shops</p>
+								</div>
+							</li>
+							<li>
+								<div class="product-category-box">
+									<h4 class="count" data-target="26">0</h4>
+									<p>Candies Collection</p>
+								</div>
+							</li>
+							<li>
+								<div class="product-category-box">
+									<h4 class="count" data-target="14">0</h4>
+									<p>Years of Experience</p>
+								</div>
+							</li>
+							<li>
+								<div class="product-category-box">
+									<h4 class="count" data-target="80">0</h4>
+									<p>Creative Pastry Chefs</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
 
-    <!-- ==========================
-		Counter Section
-	========================== -->
-    <section id="counter-sec" class="universal-paad bg-img">
-      <div class="wrapper">
-        <div class="counter-container">
-          <div class="counter-flex-box">
-            <div class="counter-num">
-              <span class="counter-run" animate="1500"></span><span>mil</span>
-              <p>Human labor hours saved with help of AI</p>
-            </div>
+		<!-- FAQs Section -->
 
-            <div class="counter-num">
-              <span class="counter-run" animate="2000"></span><span>b+</span>
-              <p>Generated revenue by AI Solutions</p>
-            </div>
+		<section class="section-pad faq-sec">
+			<div class="container">
+				<div class="grid-column-two">
+					<div class="faqs-content">
+						<div class="site-heading">
+							<span class="site-title-tagline">FAQ's</span>
+							<h2>
+								General <span class="color-brown">Frequently</span> Asked
+								Questions
+							</h2>
+						</div>
+						<p>
+							There are many variations of passages of Lorem Ipsum available,
+							but the majority have suffered alteration in some form, by
+							injected humour, or randomised words which don't look even
+							slightly believable.
+						</p>
+						<div class="faq-image-container">
+							<img src="./img/banner02a.png" alt="FAQ image" />
+						</div>
+					</div>
 
-            <div class="counter-num">
-              <span>$</span><span class="counter-run" animate="1800"></span
-              ><span>mil+</span>
-              <p>Saved operational costs due to AI</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+					<div class="faq-question-container">
+						<div class="accordian">
+							<div class="contentBx active">
+								<div class="label">
+									<div class="ques-icon">
+										<i class="fa-solid fa-question"></i>
+									</div>
+									<div class="acc-question">How Can I Become a Member?</div>
+								</div>
+								<div class="acc-content">
+									<p>
+										We denounce with righteous indignation and dislike men who
+										are so beguiled and demoralized by the charms of pleasure of
+										the moment, so blinded by desire. Ante odio dignissim quam,
+										vitae pulvinar turpis erat ac elit eu orci id odio facilisis
+										pharetra.
+									</p>
+								</div>
+							</div>
+						</div>
 
-    <!-- ==========================
-		Testimonial Section
-	========================== -->
-    <section id="testimonials-sec" class="universal-paad test-bg-color testimonials-main hidden-sec">
-      <div class="wrapper">
-        <div class="test-img-top"><img src="img/test_01.jpg" alt="" /></div>
-        <div class="test-img-bottom"><img src="img/test_04.jpg" alt="" /></div>
+						<div class="accordian">
+							<div class="contentBx">
+								<div class="label">
+									<div class="ques-icon">
+										<i class="fa-solid fa-question"></i>
+									</div>
+									<div class="acc-question">How Can I Become a Member?</div>
+								</div>
+								<div class="acc-content">
+									<p>
+										We denounce with righteous indignation and dislike men who
+										are so beguiled and demoralized by the charms of pleasure of
+										the moment, so blinded by desire. Ante odio dignissim quam,
+										vitae pulvinar turpis erat ac elit eu orci id odio facilisis
+										pharetra.
+									</p>
+								</div>
+							</div>
+						</div>
 
-        <div class="textimonial-container">
-          <div class="clients-title testimonial-text">TESTIMONIALS</div>
-          <h3>Words from <span class="client-text">Client</span></h3>
-          <div class="slider-container">
-            <img src="img/icon_comma.svg" alt="" />
-            <div class="testimonial-img-left">
-              <img src="img/test_02.jpg" alt="" />
-            </div>
-            <div class="testimonial-img-right">
-              <img src="img/test_03.jpg" alt="" />
-            </div>
-            <div class="slider">
-              <div class="slider-box">
-                <p>
-                  Having a home based business is a wonderful asset to your
-                  life. The problem still stands it comes timeadvertise your
-                  business for a cheap cost. I know you have looked answer
-                  everywhere.
-                </p>
-                <h6>Rashed kabir</h6>
-                <span>Designer</span>
-              </div>
-              <div class="slider-box">
-                <p>
-                  Having a home based business is a wonderful asset to your
-                  life. The problem still stands it comes timeadvertise your
-                  business for a cheap cost. I know you have looked answer
-                  everywhere.
-                </p>
-                <h6>Zubayer Hasan</h6>
-                <span>Front End developer</span>
-              </div>
-              <div class="slider-box">
-                <p>
-                  Having a home based business is a wonderful asset to your
-                  life. The problem still stands it comes timeadvertise your
-                  business for a cheap cost. I know you have looked answer
-                  everywhere.
-                </p>
-                <h6>Mahfuz Riad</h6>
-                <span>Designer</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+						<div class="accordian">
+							<div class="contentBx">
+								<div class="label">
+									<div class="ques-icon">
+										<i class="fa-solid fa-question"></i>
+									</div>
+									<div class="acc-question">
+										What Payment Gateway you Support
+									</div>
+								</div>
+								<div class="acc-content">
+									<p>
+										We denounce with righteous indignation and dislike men who
+										are so beguiled and demoralized by the charms of pleasure of
+										the moment, so blinded by desire. Ante odio dignissim quam,
+										vitae pulvinar turpis erat ac elit eu orci id odio facilisis
+										pharetra.
+									</p>
+								</div>
+							</div>
+						</div>
 
-    <!-- ==========================
-		Features Section
-	========================== -->
-    <section id="feature-sec" class="universal-paad acc-bg-img animation-feature1 hidden-sec">
-      <div class="wrapper">
-        <div class="feature-flex-box">
-          <div class="query-box" data-aos="fade-right">
-            <div class="clients-title ques-text">QUESTION & ANSWERS</div>
-            <h6>
-              Any <span class="answer-text">Questions?</span> <br />
-              Find here.
-            </h6>
-            <p>
-              Don’t find your answer here? just send us a message for any query.
-            </p>
-            <a href="mailto:ansari.ansari.hasib99@gmail.com" class="demo-link btn-contact">contact us</a>
-          </div>
+						<div class="accordian">
+							<div class="contentBx">
+								<div class="label">
+									<div class="ques-icon">
+										<i class="fa-solid fa-question"></i>
+									</div>
+									<div class="acc-question">How Can I Cncel My Request?</div>
+								</div>
+								<div class="acc-content">
+									<p>
+										We denounce with righteous indignation and dislike men who
+										are so beguiled and demoralized by the charms of pleasure of
+										the moment, so blinded by desire. Ante odio dignissim quam,
+										vitae pulvinar turpis erat ac elit eu orci id odio facilisis
+										pharetra.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
-          <div class="accordian-box" data-aos="fade-left">
-            <div class="accordian">
-              <button id="content-1" class="btn-acc">
-                What is web hosting?
-              </button>
-              <div id="content-1" class="acc-content active-cont">
-                <p>
-                  They not only understand what I say but read between the lines
-                  and also give me ideas of my own. AI technology is perfect for
-                  best business solutions.
-                </p>
-              </div>
-            </div>
-            <div class="accordian">
-              <button id="content-2" class="btn-acc">
-                How do you weigh different criteria in your process?
-              </button>
-              <div id="content-2" class="acc-content active-cont">
-                <p>
-                  They not only understand what I say but read between the lines
-                  and also give me ideas of my own. AI technology is perfect for
-                  best business solutions.
-                </p>
-              </div>
-            </div>
-            <div class="accordian">
-              <button id="content-1" class="btn-acc">
-                What can I use to build my website?
-              </button>
-              <div id="content-1" class="acc-content active-cont">
-                <p>
-                  They not only understand what I say but read between the lines
-                  and also give me ideas of my own. AI technology is perfect for
-                  best business solutions.
-                </p>
-              </div>
-            </div>
-            <div class="accordian">
-              <button id="content-2" class="btn-acc">
-                If I already have a website, can I transfer it to your web
-                hosting?
-              </button>
-              <div id="content-2" class="acc-content active-cont">
-                <p>
-                  They not only understand what I say but read between the lines
-                  and also give me ideas of my own. AI technology is perfect for
-                  best business solutions.
-                </p>
-              </div>
-            </div>
-            <div class="accordian">
-              <button id="content-2" class="btn-acc">
-                How can I accept credit cards online?
-              </button>
-              <div id="content-2" class="acc-content active-cont">
-                <p>
-                  They not only understand what I say but read between the lines
-                  and also give me ideas of my own. AI technology is perfect for
-                  best business solutions.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="shape-img"><img src="img/shape_work.svg" alt="" /></div>
-      </div>
-    </section>
+		<!-- Testimonial Section -->
 
-    <!-- ==========================
-		Blog Section
-	========================== -->
-    <section id="blog-sec" class="universal-paad blog">
-      <div class="wrapper">
-        <div class="bolg-container">
-          <div class="clients-title recent-news" data-aos="fade-up">
-            RECENT NEWS
-          </div>
-          <h6 data-aos="fade-up">
-            Inside Story & <span class="bolg-text">Blog</span>
-          </h6>
-          <siv class="blog-sub-container">
-            <div class="blog-box">
-              <div class="blog-img">
-                <a href="#" class="icon-arrow-right"
-                  ><img src="img/blog_img_01.jpg" alt=""
-                /></a>
-              </div>
-              <div class="blog-content">
-                <div class="blog-title">
-                  <a href="#">Data Science</a> - 15 minute read
-                </div>
-                <h5>
-                  <a href="#"
-                    >Make more daily productive working flow like pro.</a
-                  >
-                </h5>
-              </div>
-            </div>
+		<section class="section-pad testimonial-sec">
+			<div class="testimonial-bg-image">
+				<div class="container">
+					<div class="site-heading">
+						<span class="site-title-tagline">Testimonials</span>
+						<h2>What Client Say's</h2>
+					</div>
+					<div class="testimonial-slider">
+						<div class="item">
+							<div class="testimonial-card">
+								<div class="test-image">
+									<img src="./img/customer3.jpg" alt="client image" />
+								</div>
+								<h3>Client name</h3>
+								<p>
+									There are many variations of passages available but the
+									majority have suffered to the alteration in some injected.
+								</p>
+								<div class="ratings">
+									<span><i class="fa-solid fa-star"></i></span>
+									<span><i class="fa-solid fa-star"></i></span>
+									<span><i class="fa-solid fa-star"></i></span>
+									<span><i class="fa-solid fa-star"></i></span>
+									<span><i class="fa-solid fa-star"></i></span>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="testimonial-card">
+								<div class="test-image">
+									<img src="./img/customer2.jpg" alt="client image" />
+								</div>
+								<h3>Client name</h3>
+								<p>
+									There are many variations of passages available but the
+									majority have suffered to the alteration in some injected.
+								</p>
+								<div class="ratings">
+									<span><i class="fa-solid fa-star"></i></span>
+									<span><i class="fa-solid fa-star"></i></span>
+									<span><i class="fa-solid fa-star"></i></span>
+									<span><i class="fa-solid fa-star"></i></span>
+									<span><i class="fa-solid fa-star"></i></span>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="testimonial-card">
+								<div class="test-image">
+									<img src="./img/customer1.jpg" alt="client image" />
+								</div>
+								<h3>Client name</h3>
+								<p>
+									There are many variations of passages available but the
+									majority have suffered to the alteration in some injected.
+								</p>
+								<div class="ratings">
+									<span><i class="fa-solid fa-star"></i></span>
+									<span><i class="fa-solid fa-star"></i></span>
+									<span><i class="fa-solid fa-star"></i></span>
+									<span><i class="fa-solid fa-star"></i></span>
+									<span><i class="fa-solid fa-star"></i></span>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="testimonial-card">
+								<div class="test-image">
+									<img src="./img/customer3.jpg" alt="client image" />
+								</div>
+								<h3>Client name</h3>
+								<p>
+									There are many variations of passages available but the
+									majority have suffered to the alteration in some injected.
+								</p>
+								<div class="ratings">
+									<span><i class="fa-solid fa-star"></i></span>
+									<span><i class="fa-solid fa-star"></i></span>
+									<span><i class="fa-solid fa-star"></i></span>
+									<span><i class="fa-solid fa-star"></i></span>
+									<span><i class="fa-solid fa-star"></i></span>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="testimonial-card">
+								<div class="test-image">
+									<img src="./img/customer1.jpg" alt="client image" />
+								</div>
+								<h3>Client name</h3>
+								<p>
+									There are many variations of passages available but the
+									majority have suffered to the alteration in some injected.
+								</p>
+								<div class="ratings">
+									<span><i class="fa-solid fa-star"></i></span>
+									<span><i class="fa-solid fa-star"></i></span>
+									<span><i class="fa-solid fa-star"></i></span>
+									<span><i class="fa-solid fa-star"></i></span>
+									<span><i class="fa-solid fa-star"></i></span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
-            <div class="blog-box">
-              <div class="blog-img">
-                <a href="#" class="icon-arrow-right"
-                  ><img src="img/blog_img_02.jpg" alt=""
-                /></a>
-              </div>
-              <div class="blog-content">
-                <div class="blog-title">
-                  <a href="#">UI/UX Design</a> - 10 minute read
-                </div>
-                <h5>
-                  <a href="#"
-                    >Internet of the things and why it’s becoming important in
-                    the century.</a
-                  >
-                </h5>
-              </div>
-            </div>
+		<!-- Gallery Section -->
 
-            <div class="blog-box">
-              <div class="blog-img">
-                <a href="#" class="icon-arrow-right"
-                  ><img src="img/blog_img_03.jpg" alt=""
-                /></a>
-              </div>
-              <div class="blog-content">
-                <div class="blog-title">
-                  <a href="#">Marketing</a> - 8 minute read
-                </div>
-                <h5>
-                  <a href="#">The power product and the quotient rules.</a>
-                </h5>
-              </div>
-            </div>
-          </siv>
-        </div>
-      </div>
-    </section>
+		<section class="section-pad gallery-sec">
+			<div class="container">
+				<div class="site-heading">
+					<span class="site-title-tagline">Gallery</span>
+					<h2>Art of <span class="color-brown">Chocolate</span></h2>
+				</div>
+				<div class="grid-column-four">
+					<a
+						href="./img/gallery.jpg"
+						class="gallery-image"
+						data-fancybox="gallery"
+					>
+						<img src="./img/gallery.jpg" alt="gallery image" />
+						<div class="search">
+							<i class="fa-solid fa-magnifying-glass"></i>
+						</div>
+					</a>
 
-    <!-- ==========================
-		Feature Section Two
-	========================== -->
-    <section id="feature-two-sec" class="universal-paad feature-two animation-feat2 hidden-sec">
-      <div class="wrapper">
-        <div class="feature-bg-shape">
-          <img src="img/shape_37.svg" alt="" />
-        </div>
-        <div class="feature-two-flex">
-          <div class="feature-left" data-aos="fade-right">
-            <div class="feature-img"><img src="img/ils_16.svg" alt="" /></div>
-          </div>
-          <div class="feature-right" data-aos="fade-left">
-            <div class="feature-content-box">
-              <div class="clients-title conatac-text">CONTACT US</div>
-              <h5>Get Ready to Started. It’s Fast & Easy.</h5>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                quis nostrud ullamco laboris nisi.
-              </p>
-              <a href="mailto:ansari.hasib99@gmail.com" class="demo-link btn-message">Send Message</a>
-            </div>
-          </div>
-        </div>
-        <div class="partners">
-          <div class="partner-flex-box">
-            <a href="#">
-              <div class="partner-img">
-                <div>
-                  <img src="img/Plogo-13.png" alt="" />
-                </div>
-              </div>
-            </a>
+					<a
+						href="./img/gallery.jpg"
+						class="gallery-image"
+						data-fancybox="gallery"
+					>
+						<img src="./img/gallery.jpg" alt="gallery image" />
+						<div class="search">
+							<i class="fa-solid fa-magnifying-glass"></i>
+						</div>
+					</a>
 
-            <a href="#">
-              <div class="partner-img img-9">
-                <img src="img/Plogo-12.png" alt="" />
-              </div>
-            </a>
-            <a href="#">
-              <div class="partner-img img-treva">
-                <img src="img/Plogo-9.png" alt="" />
-              </div>
-            </a>
+					<a
+						href="./img/gallery.jpg"
+						class="gallery-image"
+						data-fancybox="gallery"
+					>
+						<img src="./img/gallery.jpg" alt="gallery image" />
+						<div class="search">
+							<i class="fa-solid fa-magnifying-glass"></i>
+						</div>
+					</a>
 
-            <a href="#">
-              <div class="partner-img img-sinco">
-                <img src="img/sinco-logo.png" alt="" />
-              </div>
-            </a>
+					<a
+						href="./img/gallery.jpg"
+						class="gallery-image"
+						data-fancybox="gallery"
+					>
+						<img src="./img/gallery.jpg" alt="gallery image" />
+						<div class="search">
+							<i class="fa-solid fa-magnifying-glass"></i>
+						</div>
+					</a>
 
-            <a href="#">
-              <div class="partner-img img-dots">
-                <img src="img/Plogo-8.png" alt="" />
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
+					<a
+						href="./img/gallery.jpg"
+						class="gallery-image"
+						data-fancybox="gallery"
+					>
+						<img src="./img/gallery.jpg" alt="gallery image" />
+						<div class="search">
+							<i class="fa-solid fa-magnifying-glass"></i>
+						</div>
+					</a>
 
-    <!-- ==========================
-		Footer Section
-	========================== -->
+					<a
+						href="./img/gallery.jpg"
+						class="gallery-image"
+						data-fancybox="gallery"
+					>
+						<img src="./img/gallery.jpg" alt="gallery image" />
+						<div class="search">
+							<i class="fa-solid fa-magnifying-glass"></i>
+						</div>
+					</a>
 
-    <!---------Scroll-up--------->
-    <div class="scroll">
-      <a href="#" class="agle-up"><i class="fa-solid fa-arrow-up"></i></a>
-    </div>
+					<a
+						href="./img/gallery.jpg"
+						class="gallery-image"
+						data-fancybox="gallery"
+					>
+						<img src="./img/gallery.jpg" alt="gallery image" />
+						<div class="search">
+							<i class="fa-solid fa-magnifying-glass"></i>
+						</div>
+					</a>
 
-    <footer class="sec-footer">
-      <div class="wrapper">
-        <!-- News letter Section -->
-        <div class="news-flex-box">
-          <div class="news-box">
-            <div class="news-heading">
-              <h2>
-                Join Our <span class="news-text">Newsletter</span> & <br />
-                Get updated.
-              </h2>
-            </div>
-          </div>
-          <div class="subscribe-box">
-            <div class="subscribe-input">
-              <form action="#">
-                <input
-                  type="email"
-                  class="email-input"
-                  placeholder="Enter your email"
-                />
-                <div class="subscribe-btn-box">
-                  <button type="submit" class="btn-subscribe">Subscribe</button>
-                </div>
-              </form>
-            </div>
-            <p class="subscribe-para">
-              We only send interesting and relevant emails.
-            </p>
-          </div>
-        </div>
-        <!-- Footer Links Section -->
-        <div class="links-flex-box">
-          <div class="company-info-box">
-            <div class="company-img">
-              <a href="#">Seenico.</a>
-            </div>
-            <p class="company-info-text">
-              In this class, you will learn about the most effective machine
-              learning techniques, and gain practice implementing them.
-            </p>
-            <div class="social-link">
-              <a href="#" class="social-icon"
-                ><i class="fa-brands fa-facebook-f"></i
-              ></a>
-              <a href="#" class="social-icon"
-                ><i class="fa-brands fa-twitter"></i
-              ></a>
-              <a href="#" class="social-icon"
-                ><i class="fa-brands fa-linkedin-in"></i
-              ></a>
-            </div>
-          </div>
-          <div class="footer-links-box">
-            <div class="ft-links">
-              <div class="links">
-                <div class="link-title">Links</div>
-                <ul>
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#">Pricing</a></li>
-                  <li><a href="#">About us</a></li>
-                  <li><a href="#">Services</a></li>
-                  <li><a href="#">Blog</a></li>
-                </ul>
-              </div>
-              <div class="links">
-                <div class="link-title">Services</div>
-                <ul>
-                  <li><a href="#">Artificial Intelligence</a></li>
-                  <li><a href="#">Data Analytics</a></li>
-                  <li><a href="#">Data Visualization</a></li>
-                  <li><a href="#">Deep Learning</a></li>
-                  <li><a href="#">Statistical Modeling</a></li>
-                </ul>
-              </div>
-              <div class="links">
-                <div class="link-title">Legal</div>
-                <ul>
-                  <li><a href="#">Terms of use</a></li>
-                  <li><a href="#">Terms & conditions</a></li>
-                  <li><a href="#">Privacy policy</a></li>
-                  <li><a href="#">Cookie policy</a></li>
-                </ul>
-                <a class="email" href="mailto:ansari.haseeb99@gmail.com">Email: ansari.haseeb99@gmail.com</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="copy-right-sec">
-          <div class="copy-right-text">
-            <p>Copyright @2023 seenico.</p>
-          </div>
-          <div class="copy-right-links">
-            <a href="#">Privacy & Terms.</a>
-            <a href="#">FAQ</a>
-            <a href="#">Contact Us</a>
-          </div>
-        </div>
-      </div>
-    </footer>
+					<a
+						href="./img/gallery.jpg"
+						class="gallery-image"
+						data-fancybox="gallery"
+					>
+						<img src="./img/gallery.jpg" alt="gallery image" />
+						<div class="search">
+							<i class="fa-solid fa-magnifying-glass"></i>
+						</div>
+					</a>
+				</div>
+			</div>
+		</section>
 
-    <script src="js/script.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
-  </body>
+		<!-- Blogs Section -->
+
+		<section class="section-pad blog-sec">
+			<div class="container">
+				<div class="site-heading">
+					<span class="site-title-tagline">OUR BLOG</span>
+					<h2>Latest News & <span class="color-brown">Blog</span></h2>
+				</div>
+				<div class="grid-column-three">
+					<div class="blog-card">
+						<div class="blog-image-box">
+							<img src="./img/gallery.jpg" alt="blog image" />
+						</div>
+						<div class="blog-info">
+							<div class="blog-post-detail">
+								<span><i class="fa-regular fa-user"></i></span>
+								<p>Author</p>
+							</div>
+							<div class="blog-post-detail">
+								<span><i class="fa-regular fa-calendar-days"></i></span>
+								<p>March 7, 2024</p>
+							</div>
+						</div>
+						<div class="blog-content">
+							<a href="#"
+								>There Are Many Variations Of The Passages Available Suffered</a
+							>
+						</div>
+						<a href="#" class="btn read-btn"
+							>Read more
+							<i class="fa-solid fa-arrow-right" aria-hidden="true"></i
+						></a>
+					</div>
+
+					<div class="blog-card">
+						<div class="blog-image-box">
+							<img src="./img/gallery.jpg" alt="blog image" />
+						</div>
+						<div class="blog-info">
+							<div class="blog-post-detail">
+								<span><i class="fa-regular fa-user"></i></span>
+								<p>Author</p>
+							</div>
+							<div class="blog-post-detail">
+								<span><i class="fa-regular fa-calendar-days"></i></span>
+								<p>March 7, 2024</p>
+							</div>
+						</div>
+						<div class="blog-content">
+							<a href="#"
+								>There Are Many Variations Of The Passages Available Suffered</a
+							>
+						</div>
+						<a href="#" class="btn read-btn"
+							>Read more
+							<i class="fa-solid fa-arrow-right" aria-hidden="true"></i
+						></a>
+					</div>
+
+					<div class="blog-card">
+						<div class="blog-image-box">
+							<img src="./img/gallery.jpg" alt="blog image" />
+						</div>
+						<div class="blog-info">
+							<div class="blog-post-detail">
+								<span><i class="fa-regular fa-user"></i></span>
+								<p>Author</p>
+							</div>
+							<div class="blog-post-detail">
+								<span><i class="fa-regular fa-calendar-days"></i></span>
+								<p>March 7, 2024</p>
+							</div>
+						</div>
+						<div class="blog-content">
+							<a href="#"
+								>There Are Many Variations Of The Passages Available Suffered</a
+							>
+						</div>
+						<a href="#" class="btn read-btn"
+							>Read more
+							<i class="fa-solid fa-arrow-right" aria-hidden="true"></i
+						></a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Footer Section -->
+
+		<footer>
+			<div class="footer-main-container">
+				<div class="container">
+					<div class="footer-info-conatiner">
+						<div class="company-info">
+							<div class="ft-logo">
+								<a href="#"><img src="./img/ft-logo.jpg" alt="" /></a>
+							</div>
+							<ul>
+								<li>
+									<a href="#">
+										<span><i class="fa-solid fa-location-dot"></i></span>
+										123, Main Street, Near ABC Farm, Noida, Uttar Pradesh -
+										000000
+									</a>
+								</li>
+								<li>
+									<a href="#"
+										><span><i class="fa-solid fa-phone-volume"></i></span> +91
+										0000 00000</a
+									>
+								</li>
+								<li>
+									<a href="#"
+										><span><i class="fa-solid fa-envelope"></i></span>
+										info@entechellechocolate.com</a
+									>
+								</li>
+							</ul>
+						</div>
+
+						<div class="ft-links">
+							<h3>Quick Links</h3>
+							<ul>
+								<li><a href="#">About us</a></li>
+								<li><a href="#">Terms of Service</a></li>
+								<li><a href="#">Privacy Policy</a></li>
+								<li><a href="#">News</a></li>
+								<li><a href="#">Our Team</a></li>
+							</ul>
+						</div>
+
+						<div class="ft-links">
+							<h3>Support Center</h3>
+							<ul>
+								<li><a href="#">Help Center</a></li>
+								<li><a href="#">FAQ's</a></li>
+								<li><a href="#">Booking Tips</a></li>
+								<li><a href="#">Live Chat</a></li>
+								<li><a href="#">Contact Us</a></li>
+							</ul>
+						</div>
+
+						<div class="ft-links">
+							<h3>Subscribe Now</h3>
+							<p>Subscribe Our Newsletter To Get Latest Update And News</p>
+							<input type="text" placeholder="Your Mail" />
+							<button type="submit" class="subscribe-btn">Subscribe Now</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="copy-right-container">
+				<div class="container">
+					<div class="copy-right-box">
+						<p>&#169; COPYRIGHT 2023 ENTCHELLECHOCOLATE All Rights Reserved.</p>
+						<div class="social-links">
+							<ul>
+								<li>
+									<a href="#"
+										><i class="fa fa-facebook" aria-hidden="true"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#"
+										><i class="fa fa-whatsapp" aria-hidden="true"></i
+									></a>
+								</li>
+								<li>
+									<a href="#"
+										><i class="fa fa-instagram" aria-hidden="true"></i
+									></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<script src="js/script.js"></script>
+	</body>
 </html>
